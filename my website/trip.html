@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trip | WHISPERS OF ME</title>
+
+  <style>
+    body {
+      font-family: 'Times New Roman', serif;
+      background: linear-gradient(to bottom right, #C8A2C8, #f8C8DC);
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #FFB6C1;
+      color: white;
+      text-align: center;
+      padding: 2px 0;
+      font-family: 'Lucida Handwriting', cursive;
+      font-size: 40px;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      background-color: #FFB6C1;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 0px 20px;
+      display: inline-block;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: white;
+      color: #FF69B4;
+      border-radius: 20px;
+    }
+    
+    h2 {
+      text-align: center;
+      color: #FFFFFF;
+      font-size: 46px;
+      margin-top: 50px;
+      margin-left: 400px;
+      margin-right: 40px;
+      text-shadow: 1px 1px 4px rgba(255, 105, 180, 0.7);
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      margin: 40px auto;
+      max-width: 800px;
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 25px;
+      padding: 30px;
+      margin-left: 500px;
+      margin-right: 40px;  
+
+ /* Soft, visible glow */
+  box-shadow: 
+    0 0 15px rgba(255, 182, 193, 0.6),
+    0 0 30px rgba(255, 105, 180, 0.4),
+    0 0 45px rgba(255, 182, 193, 0.3);
+   }
+
+    .caption-box {
+      width: 35%;
+      padding: 20px;
+      text-align: left;
+      text-shadow: 2px 2px 4px rgba(150, 75, 100, 0.5);
+      color: #5A3E36;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    .slideshow-container {
+      width: 50%;
+      position: relative;
+      margin: auto;
+   }
+
+    .mySlides {
+      display: none;
+    }
+
+    img {
+      vertical-align: middle;
+      border-radius: 15px;
+      width: 100%;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Fixed Arrows */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 45%;
+      width: auto;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      user-select: none;
+      border-radius: 50%;
+      z-index: 2;
+      background-color: rgba(0, 0, 0, 0.3);
+      transition: 0.3s ease;
+    }
+
+    .next {
+      right: 0;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    footer {
+      text-align: center;
+      color: black;
+      padding: 15px;
+      margin-top: 100px;
+      font-size: 14px;
+    }
+
+    /* Floating Sidebar */
+   .sidenav {
+     position: fixed; 
+     top: 55%;
+     left: 15px;
+     transform: translateY(-50%);
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+     background-color: rgba(255, 192, 203, 0.85); 
+     padding: 15px;
+     border-radius: 15px;
+     box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+     z-index: 100;
+   }
+
+  .sidenav h3 {
+    font-size: 16px;
+    padding: 10px 0 5px;
+    color: #5A3E36;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(150, 75, 100, 0.5);
+    letter-spacing: 1px;
+    border-bottom: 2px solid #f7a5b8;
+    margin: 0;
+  }
+
+  .sidenav a {
+    padding: 8px 12px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #111;
+    display: block;
+    transition: 0.3s ease;
+    border-radius: 10px;
+  }
+
+  .sidenav a:hover {
+    background-color: #f8a7c0;
+    color: white;
+    transform: scale(1.05);
+  }
+
+   @media screen and (max-height: 450px) {
+    .sidenav { padding-top: 120px; }
+    .sidenav a { font-size: 18px; }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>&#127800; WHISPERS OF ME &#127800;</h1>
+  </header>
+
+  <nav> 
+    <a href="home.html">Home</a> 
+    <a href="about.html">About</a> 
+    <a href="trip.html" class="active">Trip</a> 
+    <a href="cafe.html">Cafe</a> 
+    <a href="music.html">Music</a> 
+    <a href="my writing.html">My Writing</a>
+  </nav>
+
+
+<div class="sidenav">
+
+  <h3>✨INTERESTING PLACE IN PENANG✨</h3>
+  <a href="https://www.penanghill.gov.my/index.php/en/">• PENANG HILL</a>
+  <a href="https://chewjettypenang.weebly.com/index.html">• CHEW JETTY</a>
+  <a href="https://www.instagram.com/foto.pause/?hl=en">• FOTOPAUSE</a>
+  <a href="https://www.instagram.com/hanafilm.my/?hl=en">• HANAFILM</a>
+
+
+  <h3>✨INTERESTING PLACE IN PERLIS✨</h3>
+  <a href="https://tourism.perlis.gov.my/tour-item/kampung-wai/">• KAMPUNG WAI</a>
+  <a href="https://www.instagram.com/batik.inderawasih/?hl=en">• BATIK INDERAWASIH</a>
+
+</div>
+
+<h2>PENANG TRIP💕</h2>
+<div class="container">
+  <div class="caption-box">
+    <p>Penang Trip after my internship with Ecah and Tikah 💖</p>
+    <p>Our first trip together, a gentle escape filled with laughter, stories, and quiet joy. After so long apart, it felt warm to catch up and create new memories under the soft Penang skies. 💞Every moment felt like a whisper of happiness I’ll keep close💞</p>
+  </div>
+
+  <div class="slideshow-container">
+    <div class="mySlides1">
+      <img src="C:\Users\User\Desktop\JPGWEB\photo_2025-11-03_16-17-05.jpg">
+    </div>
+    <div class="mySlides1">
+      <img src="C:\Users\User\Desktop\JPGWEB\photo_2025-11-03_16-17-23.jpg">
+    </div>
+    <div class="mySlides1">
+      <img src="C:\Users\User\Desktop\JPGWEB\photo_2025-11-03_16-17-28.jpg">
+    </div>
+    <div class="mySlides1">
+      <img src="C:\Users\User\Desktop\JPGWEB\photo_2025-11-03_16-18-04.jpg">
+    </div>
+    <div class="mySlides1">
+      <img src="C:\Users\User\Desktop\JPGWEB\photo_2025-11-03_16-20-11.jpg">
+    </div>
+    <div class="mySlides1">
+      <img src="C:\Users\User\Desktop\JPGWEB\photo_2025-11-03_16-37-18.jpg">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1, 0)">❮</a>
+    <a class="next" onclick="plusSlides(1, 0)">❯</a>
+  </div>
+</div>
+
+
+<h2>PERLIS TRIP WITH 4EVER3 🌸</h2>
+<div class="container">
+  <div class="caption-box">
+    <p>First trip together with them - 4ever3 💕</p>
+    <p>One of my little bucket list dreams, to go on a trip with them. I brought them to Perlis to enjoy the calm and gentle rhythm of my city. It was such a happy moment driving them around and having a cozy sleepover at my place. We shared endless laughter, quiet talks, and simple joys. ✨Days that drifted by like a sweet, quiet dream✨<p>
+  </div>
+
+  <div class="slideshow-container">
+    <div class="mySlides2">
+      <img src="C:\Users\User\Desktop\JPGWEB\photo_2025-11-03_17-09-06.jpg">
+    </div>
+    <div class="mySlides2">
+      <img src="C:\Users\User\Desktop\JPGWEB\photo_2025-11-03_17-08-29.jpg">
+    </div>
+    <div class="mySlides2">
+      <img src="C:\Users\User\Desktop\JPGWEB\photo_2025-11-03_17-15-22.jpg">
+    </div>
+    <div class="mySlides2">
+      <img src="C:\Users\User\Desktop\JPGWEB\photo_2025-11-03_17-14-12.jpg">
+    </div>
+    <div class="mySlides2">
+      <img src="C:\Users\User\Desktop\JPGWEB\photo_2025-11-03_17-14-34.jpg">
+    </div>
+    <div class="mySlides2">
+      <img src="C:\Users\User\Desktop\JPGWEB\photo_2025-11-03_17-09-15.jpg">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1, 1)">❮</a>
+    <a class="next" onclick="plusSlides(1, 1)">❯</a>
+  </div>
+</div>
+
+
+<h2>PENANG TRIP WITH 4EVER3 ☘️</h2>
+<div class="container">
+  <div class="caption-box">
+    <p>Second trip - 4EVER3 🌷</p>
+    <p>Second trip with 4ever3 in Penang, a heartwarming escape filled with laughter and little moments that felt like home. We stayed over at Ainul’s house and had the sweetest time getting to know her lovely mother, such a kind and easygoing soul. Grateful to her for driving us around Penang and treating us to so many delicious meals. 💖Truly, a weekend wrapped in warmth and joy💖</p>
+  </div>
+
+  <div class="slideshow-container">
+    <div class="mySlides3">
+      <img src="C:\Users\User\Desktop\JPGWEB\photo_2025-11-03_17-30-21.jpg">
+    </div>
+    <div class="mySlides3">
+      <img src="C:\Users\User\Desktop\JPGWEB\photo_2025-11-03_17-31-28.jpg">
+    </div>
+    <div class="mySlides3">
+      <img src="C:\Users\User\Desktop\JPGWEB\photo_2025-11-03_17-32-18.jpg">
+    </div>
+    <div class="mySlides3">
+      <img src="C:\Users\User\Desktop\JPGWEB\photo_2025-11-03_17-33-42.jpg">
+    </div>
+    <div class="mySlides3">
+      <img src="C:\Users\User\Desktop\JPGWEB\photo_2025-11-03_17-36-28.jpg">
+    </div>
+    <div class="mySlides3">
+      <img src="C:\Users\User\Desktop\JPGWEB\photo_2025-11-03_17-30-59.jpg">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1, 2)">❮</a>
+    <a class="next" onclick="plusSlides(1, 2)">❯</a>
+  </div>
+</div>
+
+
+<footer>© 2025 WHISPER OF ME. LIVE MY LIFE. All Rights Reserved.</footer>
+
+<script>
+  let slideIndex = [1,1,1];
+  let slideId = ["mySlides1", "mySlides2", "mySlides3"];
+  showSlides(1, 0);
+  showSlides(1, 1);
+  showSlides(1, 2);
+
+  function plusSlides(n, no) {
+    showSlides(slideIndex[no] += n, no);
+  }
+
+  function showSlides(n, no) {
+    let i;
+    let x = document.getElementsByClassName(slideId[no]);
+    if (n > x.length) {slideIndex[no] = 1}
+    if (n < 1) {slideIndex[no] = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x[slideIndex[no]-1].style.display = "block";
+  }
+</script>
+
+</body>
+</html>                                                              

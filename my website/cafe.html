@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafe | WHISPERS OF ME</title>
+
+<style>
+
+body {
+  font-family: 'Times New Roman', serif;
+  background: linear-gradient(to bottom right, #C8A2C8, #F8C8DC);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #FFB6C1;
+  color: white;
+  text-align: center;
+  padding: 2px 0;
+  font-family: 'Lucida Handwriting', cursive;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+nav {
+  background-color: #FFB6C1;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0px 20px;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  background-color: white;
+  color: #FF69B4;
+  border-radius: 20px;
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  font-size: 40px;
+  color: #5A3E36;
+  margin-top: 40px;
+  letter-spacing: 2px;
+}
+
+/* Café container layout */
+.cafe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 40px;
+
+}
+
+/* Top row - 3 cafes */
+.cafe-row {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  flex-wrap: nowrap;
+  
+}
+
+/* Bottom row - 2 centered cafes */
+.cafe-row.bottom {
+  justify-content: center;
+
+}
+
+/* Café card style */
+.cafe-card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+  width: 350px;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.cafe-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 
+      0 0 15px rgba(138, 43, 226, 0.6),  /* soft purple */
+      0 0 30px rgba(147, 112, 219, 0.4), /* medium purple */
+      0 0 45px rgba(186, 85, 211, 0.3);  /* outer soft purple */
+
+}
+
+.cafe-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.cafe-info {
+  padding: 15px;
+}
+
+.cafe-info h3 {
+  color: #FF69B4;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.cafe-info p {
+  color: #5A3E36;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.cafe-info a {
+  text-decoration: none;
+  color: #FF69B4;
+  font-weight: bold;
+}
+
+.cafe-info a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  color: black;
+  padding: 15px;
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+</style>
+
+</head>
+
+<body>
+    
+<header>
+  <h1>&#127800; WHISPERS OF ME &#127800;</h1>
+</header>
+
+<nav> 
+  <a href="home.html">Home</a> 
+  <a href="about.html">About</a> 
+  <a href="trip.html">Trip</a> 
+  <a href="cafe.html" class="active">Cafe</a> 
+  <a href="music.html">Music</a> 
+  <a href="my writing.html">My writing</a>
+</nav>
+
+<h2 class="section-title">☕My Favourite Cafes☕</h2>
+
+
+
+<div class="cafe-container">
+
+  <!-- First row (3 cafés) -->
+  <div class="cafe-row top">
+    <div class="cafe-card">
+      <img src="C:\Users\User\Desktop\JPGWEB\photo_2025-11-03_17-11-10.jpg" alt="Cafe 1">
+      <div class="cafe-info">
+        <h3>✨OVEN RIMBA✨</h3>
+        <p>A cozy little café with an aesthetic charm, specializing in pasta, pastries, and delightful desserts.It’s the perfect spot for those who adore sweet treats and freshly baked delights — a must-visit haven for dessert and pastry lovers.</p>
+        <a href="https://www.instagram.com/ovenrimba/?hl=en">Visit OVEN RIMBA →</a>
+      </div>
+    </div>
+
+
+    <div class="cafe-card">
+      <img src="C:\Users\User\Desktop\JPGWEB\photo_2025-11-03_17-08-20.jpg" alt="Cafe 2">
+      <div class="cafe-info">
+        <h3>✨LORPAK✨</h3>
+        <p>An introvert-friendly café where you can enjoy your favorite coffee without the pressure of social interaction. Designed for comfort and ease, this cozy spot makes ordering simple, fun, and stress-free.</p>
+        <a href="https://www.instagram.com/lorpak_kangar/">Visit LORPAK →</a>
+      </div>
+    </div>
+
+
+    <div class="cafe-card">
+      <img src="C:\Users\User\Desktop\JPGWEB\photo_2025-11-04_00-50-33.jpg" alt="Cafe 3">
+      <div class="cafe-info">
+        <h3>✨HANAZAWA✨</h3>
+        <p>Soft lights, calm vibes, and the comforting aroma of freshly baked pastries fill the air.Step into a cozy Japanese-style café where every bite feels like a warm hug and every sip brings a moment of peace.</p>
+        <a href="https://www.instagram.com/hanazawa_cafe/?hl=en">Visit HANAZAWA →</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Second row (2 cafés centered) -->
+  <div class="cafe-row bottom">
+    <div class="cafe-card">
+      <img src="C:\Users\User\Desktop\JPGWEB\photo_2025-11-04_00-55-14.jpg" alt="Cafe 4">
+      <div class="cafe-info">
+        <h3>✨BAESHAKES✨</h3>
+        <p>Baeshake is a cozy café serving authentic Korean dishes in generous portions at affordable prices. With calm vibes, a modern style, and soft Korean songs playing, it’s the perfect spot to relax and enjoy a taste of Korean food.</p>
+        <a href="https://www.instagram.com/baeshake.cafe/?hl=en">Visit BAESHAKE →</a>
+      </div>
+    </div>
+
+
+    <div class="cafe-card">
+      <img src="C:\Users\User\Desktop\JPGWEB\photo_2025-11-04_01-00-12.jpg" alt="Cafe 5">
+      <div class="cafe-info">
+        <h3>✨NGOPI✨</h3>
+        <p>Ngopi is a warm, old-style café that brings nostalgic vibes to every visit. The aroma of freshly brewed coffee and delicious pastries fills the air, inviting everyone to sit back and enjoy. From pastries to sandwiches, it’s a favorite spot for all generations to gather, share stories, and enjoy good food together.</p>
+        <a href="https://www.instagram.com/ngopikangar/?hl=en">Visit NGOPI →</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>© 2025 WHISPER OF ME. LIVE MY LIFE. All Rights Reserved.</footer>
+
+</body>
+</html>
+
+
+
+

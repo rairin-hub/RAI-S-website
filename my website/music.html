@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home | WHISPERS OF ME</title>
+
+<style>
+body {
+  font-family: 'Times New Roman', serif;
+  background: linear-gradient(to bottom right, #C8A2C8, #F8C8DC);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #FFB6C1;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-family: 'Lucida Handwriting', cursive;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+nav {
+  background-color: #FFB6C1;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0px 20px;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  background-color: white;
+  color: #FF69B4;
+  border-radius: 20px;
+}
+
+.song-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 100px;
+}
+
+.song-card {
+  background-color: rgba(255, 240, 245, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(255, 182, 193, 0.5);
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.song-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(255, 182, 193, 0.7);
+}
+
+.song-card h2 {
+  font-family: 'Lucida Handwriting', cursive;
+  color: #FF69B4;
+  margin-bottom: 15px;
+  font-size: 24px;
+  text-shadow: 1px 1px #fff;
+  text-align: center;
+}
+
+.song-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  color: #4B0082;
+  font-size: 18px;
+}
+
+.song-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  padding: 12px 20px;
+  box-shadow: 0 2px 5px rgba(255, 182, 193, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.song-item:hover {
+  transform: scale(1.02);
+}
+
+.song-item span {
+  flex: 1;
+  margin-left: 20px;
+  font-weight: bold;
+  color: #6a007b;
+  font-size: 18px;
+}
+
+.song-item img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #FFB6C1;
+  box-shadow: 0 0 20px 8px rgba(255, 182, 193, 0.7);
+  animation: glow 2s infinite alternate;
+  cursor: pointer;
+}
+
+.song-item audio {
+  width: 250px;
+  border-radius: 12px;
+  filter: drop-shadow(0 0 8px pink);
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 15px 6px rgba(255, 192, 203, 0.6); }
+  to { box-shadow: 0 0 25px 12px rgba(255, 182, 193, 0.9); }
+}
+
+footer {
+  text-align: center;
+  color: black;
+  padding: 15px;
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .song-section {
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+
+  .song-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .song-item span {
+    margin: 10px 0;
+  }
+
+  .song-item audio {
+    width: 100%;
+  }
+}
+</style>
+</head>
+
+<body>
+<header>
+  <h1>&#127800 WHISPERS OF ME &#127800</h1>
+</header>
+
+<nav> 
+  <a href="home.html">Home</a> 
+  <a href="about.html">About</a> 
+  <a href="trip.html">Trip</a> 
+  <a href="cafe.html">Cafe</a> 
+  <a href="music.html" class="active">Music</a> 
+  <a href="my writing.html">My writing</a>
+</nav>
+
+<section class="song-section">
+
+  <!-- Melodies of Life -->
+  <div class="song-card">
+    <h2>MELODIES OF LIFE🎶:</h2>
+    <ul class="song-list">
+      <li class="song-item">
+        <img src="C:\Users\User\Desktop\JPGWEB\seventeenkidult.jpg" alt="SEVENTEEN – KIDULT">
+        <span>SEVENTEEN – KIDULT</span>
+        <audio controls>
+          <source src="C:\Users\User\Desktop\SONGWEB\KIDULTSVT.mp3" type"audio/mpeg">
+        </audio>
+      </li>
+      <li class="song-item">
+        <img src="C:\Users\User\Desktop\JPGWEB\Livemylife.jpg" alt="Aespa – LIVE MY LIFE">
+        <span>AESPA – LIVE MY LIFE</span>
+        <audio controls>
+          <source src="C:\Users\User\Desktop\SONGWEB\LML(ae).mp3" type="audio/mpeg">
+        </audio>
+      </li>
+      <li class="song-item">
+        <img src="C:\Users\User\Desktop\JPGWEB\GOODLIFE.jpg" alt="WAYV – GOOD LIFE">
+        <span>WAYV – GOOD LIFE</span>
+        <audio controls>
+          <source src="C:\Users\User\Desktop\SONGWEB\WayV.mp3" type="audio/mpeg">
+        </audio>
+      </li>
+    </ul>
+  </div>
+
+  <!-- SOFT HEALING -->
+  <div class="song-card">
+    <h2>SOFT HEALING🎶:</h2>
+    <ul class="song-list">
+      <li class="song-item">
+        <img src="C:\Users\User\Desktop\JPGWEB\everythingiwanted.jpg" alt="BILLIE EILISH – EVERYTHING I WANTED">
+        <span>BILLIE EILISH – EVERYTHING I WANTED</span>
+        <audio controls>
+          <source src="C:\Users\User\Desktop\SONGWEB\EIW.mp3" type="audio/mpeg">
+        </audio>
+      </li>
+      <li class="song-item">
+        <img src="C:\Users\User\Desktop\JPGWEB\bol4.jpg" alt="BOL4 – TO MY YOUTH">
+        <span>BOL4 – TO MY YOUTH</span>
+        <audio controls>
+          <source src="C:\Users\User\Desktop\SONGWEB\TOMYYOUTH.mp3" type="audio/mpeg">
+        </audio>
+      </li>
+      <li class="song-item">
+        <img src="C:\Users\User\Desktop\JPGWEB\SVT.jpg" alt="SEVENTEEN – CHEERS TO YOUTH">
+        <span>SEVENTEEN – CHEERS TO YOUTH</span>
+        <audio controls>
+          <source src="C:\Users\User\Desktop\SONGWEB\CTY.mp3" type="audio/mpeg">
+        </audio>
+      </li>
+    </ul>
+  </div>
+
+  <!-- SOFT GLOW R&B -->
+  <div class="song-card">
+    <h2>SOFT GLOW R&B🎶:</h2>
+    <ul class="song-list">
+      <li class="song-item">
+        <img src="C:\Users\User\Desktop\JPGWEB\DOPAMINE.JPEG" alt="GISELLE – DOPAMINE">
+        <span>GISELLE – DOPAMINE</span>
+        <audio controls>
+          <source src="C:\Users\User\Desktop\SONGWEB\DOPAMINE.mp3" type="audio/mpeg">
+        </audio>
+      </li>
+      <li class="song-item">
+        <img src="C:\Users\User\Desktop\JPGWEB\JAEHYUN.jpg" alt="JAEHYUN – FOREVER ONLY">
+        <span>JAEHYUN – FOREVER ONLY</span>
+        <audio controls>
+          <source src="C:\Users\User\Desktop\SONGWEB\FOREVERONLY.mp3" type="audio/mpeg">
+        </audio>
+      </li>
+      <li class="song-item">
+        <img src="C:\Users\User\Desktop\JPGWEB\IU.jpg" alt="IU – LILAC">
+        <span>IU – LILAC</span>
+        <audio controls>
+          <source src="C:\Users\User\Desktop\SONGWEB\IULILAC.mp3" type="audio/mpeg">
+        </audio>
+      </li>
+    </ul>
+  </div>
+
+  <!-- MY MOOD TUNES -->
+  <div class="song-card">
+    <h2>MY MOOD TUNES🎶:</h2>
+    <ul class="song-list">
+      <li class="song-item">
+        <img src="C:\Users\User\Desktop\JPGWEB\ARI.jpg" alt="ARIANA GRANDE – BREATHIN">
+        <span>ARIANA GRANDE – BREATHIN</span>
+        <audio controls>
+          <source src="C:\Users\User\Desktop\SONGWEB\BREATHIN.mp3" type="audio/mpeg">
+        </audio>
+      </li>
+      <li class="song-item">
+        <img src="C:\Users\User\Desktop\JPGWEB\minefields.jpg" alt="FAOUZIA, JOHN LEGEND – MINEFIELDS">
+        <span>FAOUZIA, JOHN LEGEND – MINEFIELDS</span>
+        <audio controls>
+          <source src="C:\Users\User\Desktop\SONGWEB\MINEFIELDS.mp3" type="audio/mpeg">
+        </audio>
+      </li>
+      <li class="song-item">
+        <img src="C:\Users\User\Desktop\JPGWEB\ANNE.jpg" alt="ANNE MARIE – 2002">
+        <span>ANNE MARIE – 2002</span>
+        <audio controls>
+          <source src="C:\Users\User\Desktop\SONGWEB\2002.mp3" type="audio/mpeg">
+        </audio>
+      </li>
+    </ul>
+  </div>
+
+</section>
+
+<footer>© 2025 WHISPERS OF ME. LIVE MY LIFE. All Rights Reserved.</footer>
+
+</body>
+</html>
