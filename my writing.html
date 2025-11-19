@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home | WHISPERS OF ME</title>
+
+<style>
+
+body {
+  font-family: 'Times New Roman', serif;
+  background: linear-gradient(to bottom right, #f9d5ec, #e3bce3);
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  background-color: #FFB6C1;
+  color: white;
+  text-align: center;
+  padding: 2px 0;
+  font-family: 'Lucida Handwriting', cursive;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+/* Navigation */
+nav {
+  background-color: #FFB6C1;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0px 20px;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  background-color: white;
+  color: #FF69B4;
+  border-radius: 20px;
+}
+
+/* FULLSCREEN MOODBOARD COLLAGE */
+.collage-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  position: relative;
+}
+
+.collage-grid,
+.center-text {
+  position: relative;
+  z-index: 2;
+}
+
+.collage-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  background-color: transparent;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+/* Dreamy Soft Purple Glow on Images */
+.collage-grid img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 0.9;
+  object-fit: cover;
+  border-radius: 18px;
+  overflow: hidden;
+
+  /* Soft Lavender + Pink Fairy Glow ✿ */
+  box-shadow:
+    0 0 20px rgba(210, 160, 255, 0.9),   /* main soft purple glow */
+    0 0 55px rgba(190, 140, 230, 0.6),   /* lilac bloom */
+    0 0 95px rgba(230, 170, 240, 0.45),  /* pastel haze */
+    inset 0 0 30px rgba(255, 225, 245, 0.6); /* soft inner glow */  
+    transition: none;
+}
+
+/* CENTER GLOW TEXT BOX */
+.center-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  font-family: 'Lucida Handwriting', cursive;
+  font-size: 52px;
+  color: #5A3E36;
+  font-weight: bold;
+
+  background-color: #fff8fb;
+  border-radius: 20px;
+  padding: 25px;
+  letter-spacing: 2px;
+
+  box-shadow:
+    0 0 12px rgba(255, 182, 193, 0.8),
+    0 0 25px rgba(255, 105, 180, 0.5),
+    inset 0 0 15px rgba(255, 182, 193, 0.4);
+
+  transition: 0.4s ease;
+}
+
+.center-text:hover {
+  transform: scale(1.04);
+  box-shadow:
+    0 0 20px rgba(255, 182, 193, 1),
+    0 0 35px rgba(255, 105, 180, 0.7),
+    inset 0 0 18px rgba(255, 182, 193, 0.6);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  color: black;
+  padding: 35px;
+  font-size: 14px;
+}
+
+</style>
+</head>
+
+<body>
+    
+<header>
+  <h1>&#127800; WHISPERS OF ME &#127800;</h1>
+</header>
+
+<nav> 
+  <a href="home.html">Home</a> 
+  <a href="about.html">About</a> 
+  <a href="trip.html">Trip</a> 
+  <a href="cafe.html">Cafe</a> 
+  <a href="music.html">Music</a> 
+  <a href="my writing.html" class="active">My writing</a>
+</nav>
+
+<!-- ✿ FULLSCREEN COLLAGE SECTION ✿ -->
+<section class="collage-section">
+  <div class="collage-grid">
+    <img src="C:\Users\User\Desktop\JPGWEB\writing4.1.jpg">
+    <img src="C:\Users\User\Desktop\JPGWEB\photo_2025-11-05_22-33-27.jpg">
+    <img src="C:\Users\User\Desktop\JPGWEB\writing5.jpg">
+
+    <img src="C:\Users\User\Desktop\JPGWEB\photo_2025-11-05_22-33-35.jpg">
+    <div class="center-text"> QOUTES OF ME &#128149;</div>
+    <img src="C:\Users\User\Desktop\JPGWEB\photo_2025-11-05_22-33-39.jpg">
+
+    <img src="C:\Users\User\Desktop\JPGWEB\writing3.jpg">
+    <img src="C:\Users\User\Desktop\JPGWEB\photo_2025-11-05_22-33-42.jpg">
+    <img src="C:\Users\User\Desktop\JPGWEB\writing2.webp">
+  </div>
+</section>
+
+<footer>© 2025 WHISPER OF ME. LIVE MY LIFE. All Rights Reserved.</footer>
+
+</body>
+</html>
