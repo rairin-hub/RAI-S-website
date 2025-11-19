@@ -1,197 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | WHISPERS OF ME</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home | WHISPERS OF ME</title>
+<style>
+    body {
+        font-family: 'Times New Roman', serif;
+        background: linear-gradient(to bottom right, #C8A2C8, #f8C8DC);
+        color: 0;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
 
-    <style>
+    /* ========== RESPONSIVE WRAPPER ========== */
+    .scale-wrapper {
+        width: 100%;
+        transform-origin: top center; /* keep scaling centered */
+    }
+    /* ======================================== */
 
-       body {
-            font-family: 'Times New Roman', serif;
-            background: linear-gradient(to bottom right, #C8A2C8, #f8C8DC);
-            color: 0;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-        }
+    header {
+        background-color: #FFB6C1;
+        color: white;
+        text-align: center;
+        padding: 2px 0;
+        font-family: 'Lucida Handwriting', cursive;
+        font-size: 40px;
+        letter-spacing: 1px;
+    }
 
-        header {
-            background-color: #FFB6C1;
-            color: white;
-            text-align: center;
-            padding: 2px 0;
-            font-family: 'Lucida Handwriting', cursive;
-            font-size: 40px;
-            letter-spacing: 1px;
-        }
+    nav {
+        background-color: #FFB6C1;
+        text-align: center;
+        padding: 10px 0;
+    }
 
-        nav {
-            background-color: #FFB6C1;
-            text-align: center;
-            padding: 10px 0;
-        }
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 0px 20px;
+        display: inline-block;
+        transition: 0.3s ease;
+    }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 20px;
-            font-weight: bold;
-            padding: 0px 20px;
-            display: inline-block;
-            transition: 0.3s ease;
-        }
+    nav a:hover {
+        background-color: white;
+        color: #FF69B4;
+        border-radius: 20px;
+    }
 
-        nav a:hover {
-            background-color: white;
-            color: #FF69B4;
-            border-radius: 20px;
-        }
+    /* Container Section */
+    .container {
+        max-width: 700px;
+        margin: 80px auto;
+        background: rgba(255, 255, 255, 0.85);
+        border-radius: 25px;
+        box-shadow: 0 8px 25px rgba(255, 182, 193, 0.6);
+        padding: 50px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        animation: floatUp 2s ease-in-out infinite alternate;
+    }
 
-        /* Container Section */
-        .container {
-            max-width: 700px;
-            margin: 80px auto;
-            background: rgba(255, 255, 255, 0.85);
-            border-radius: 25px;
-            box-shadow: 0 8px 25px rgba(255, 182, 193, 0.6);
-            padding: 50px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-            animation: floatUp 2s ease-in-out infinite alternate;
-        }
+    .container::before, .container::after {
+        content: '✿';
+        position: absolute;
+        font-size: 35px;
+        color: #FFB6C1;
+        opacity: 0.7;
+        animation: sparkle 10s linear infinite;
+    }
 
-        .container::before, .container::after {
-            content: '✿';
-            position: absolute;
-            font-size: 35px;
-            color: #FFB6C1;
-            opacity: 0.7;
-            animation: sparkle 10s linear infinite;
-        }
+    .container::before {
+        top: 10px;
+        left: 20px;
+        animation-delay: 0s;
+    }
 
-        .container::before {
-            top: 10px;
-            left: 20px;
-            animation-delay: 0s;
-        }
+    .container::after {
+        bottom: 15px;
+        right: 25px;
+        animation-delay: 2s;
+    }
 
-        .container::after {
-            bottom: 15px;
-            right: 25px;
-            animation-delay: 2s;
-        }
+    @keyframes sparkle {
+        0% { transform: translateY(0) rotate(0deg); opacity: 0.8; }
+        50% { transform: translateY(-15px) rotate(180deg); opacity: 1; }
+        100% { transform: translateY(0) rotate(360deg); opacity: 0.8; }
+    }
 
-        @keyframes sparkle {
-            0% { transform: translateY(0) rotate(0deg); opacity: 0.8; }
-            50% { transform: translateY(-15px) rotate(180deg); opacity: 1; }
-            100% { transform: translateY(0) rotate(360deg); opacity: 0.8; }
-        }
+    @keyframes floatUp {
+        from { transform: translateY(0px); }
+        to { transform: translateY(-10px); }
+    }
 
-        @keyframes floatUp {
-            from { transform: translateY(0px); }
-            to { transform: translateY(-10px); }
-        }
+    h2 {
+        font-size: 42px;
+        color: #ff69b4;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 5px rgba(255, 182, 193, 0.7);
+    }
 
-        h2 {
-            font-size: 42px;
-            color: #ff69b4;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 5px rgba(255, 182, 193, 0.7);
-        }
+    p {
+        font-size: 20px;
+        color: #444;
+        margin-top: 20px;
+        line-height: 1.6;
+    }
 
-        p {
-            font-size: 20px;
-            color: #444;
-            margin-top: 20px;
-            line-height: 1.6;
-        }
+    .emoji {
+        font-size: 22px;
+        color: #d63384;
+    }
 
-        .emoji {
-            font-size: 22px;
-            color: #d63384;
-        }
+    footer {
+        text-align: center;
+        color: black;
+        padding: 15px;
+        margin-top: 140px;
+        font-size: 14px;
+    }
 
-        footer {
-            text-align: center;
-            color: black;
-            padding: 15px;
-            margin-top: 140px;
-            font-size: 14px;
-        }
+    /* ========== RESPONSIVE SCALING ONLY ========== */
+    @media screen and (max-width: 1024px) {
+        .scale-wrapper { transform: scale(0.9); }
+    }
+    @media screen and (max-width: 768px) {
+        .scale-wrapper { transform: scale(0.7); }
+    }
+    @media screen and (max-width: 480px) {
+        .scale-wrapper { transform: scale(0.5); }
+    }
+    /* ============================================== */
 
-        /* ================= RESPONSIVE CODE ================= */
-        @media screen and (max-width: 768px) {
-            header {
-                font-size: 30px;
-                padding: 5px 0;
-            }
-
-            nav a {
-                display: block;
-                margin: 5px 0;
-                padding: 10px 0;
-                font-size: 18px;
-            }
-
-            .container {
-                width: 90%;
-                margin: 50px auto;
-                padding: 30px;
-            }
-
-            h2 {
-                font-size: 32px;
-            }
-
-            p {
-                font-size: 18px;
-            }
-
-            footer {
-                font-size: 12px;
-                margin-top: 80px;
-            }
-        }
-
-        @media screen and (max-width: 480px) {
-            header {
-                font-size: 24px;
-            }
-
-            h2 {
-                font-size: 28px;
-            }
-
-            p {
-                font-size: 16px;
-            }
-
-            nav a {
-                font-size: 16px;
-                padding: 8px 0;
-            }
-        }
-        /* ================================================== */
-
-    </style>
-
+</style>
 </head>
-
 <body>
-    
+<div class="scale-wrapper">
     <header>
         <h1>&#127800 WHISPERS OF ME &#127800</h1>
     </header>
 
-    <nav> 
-        <a href="index.html" class="active">Home</a> 
-        <a href="about.html">About</a> 
-        <a href="trip.html">Trip</a> 
-        <a href="cafe.html">Cafe</a> 
-        <a href="music.html">Music</a> 
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="trip.html">Trip</a>
+        <a href="cafe.html">Cafe</a>
+        <a href="music.html">Music</a>
         <a href="mywriting.html">My writing</a>
     </nav>
 
@@ -201,6 +161,7 @@
     </div>
 
     <footer>© 2025 WHISPER OF ME. LIVE MY LIFE. All Rights Reserved.</footer>
-
+</div>
 </body>
 </html>
+
