@@ -194,6 +194,80 @@
     .sidenav a { font-size: 18px; }
     }
 
+    /* ---------------------------------------------
+    RESPONSIVE LAYOUT FOR SMALL DEVICES (MAX 600PX)
+   ------------------------------------------------- */
+@media (max-width: 600px) {
+
+    header {
+        font-size: 26px;
+        padding: 8px 0;
+    }
+
+    nav a {
+        display: block;
+        font-size: 16px;
+        padding: 10px 0;
+    }
+
+    h2 {
+        font-size: 26px;
+        margin: 20px auto;
+        text-align: center;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    /* Make trip box full width */
+    .container {
+        flex-direction: column;
+        width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    /* Caption text */
+    .caption-box {
+        width: 100%;
+        font-size: 15px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Slideshow */
+    .slideshow-container {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .prev, .next {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .sidenav {
+        position: static;
+        width: 90%;
+        margin: 20px auto;
+        transform: none;
+    }
+
+    .sidenav h3 {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .sidenav a {
+        font-size: 14px;
+        padding: 6px 10px;
+        text-align: center;
+    }
+
+    footer {
+        font-size: 12px;
+        margin-top: 40px;
+    }
+}
   </style>
 </head>
 
@@ -355,4 +429,5 @@
 </body>
 
 </html>                                                              
+
 
