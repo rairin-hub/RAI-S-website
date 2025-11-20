@@ -136,6 +136,67 @@
       height: 30px;
       border-radius: 50%;
     }
+/*  ------------------------------------------
+ RESPONSIVE LAYOUT FOR SMALL DEVICES 
+------------------------------------------ */
+@media (max-width: 600px) {
+
+    header {
+        font-size: 26px;
+        padding: 6px 0;
+    }
+
+    nav {
+        padding: 6px 0;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px 0;
+        font-size: 17px;
+    }
+
+    .about-container {
+        max-width: 90%;
+        margin: 30px auto;
+        padding: 20px;
+        flex-direction: column;
+        border-radius: 18px;
+    }
+
+    .about-text h2 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .about-text p {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .about-image img {
+        width: 80%;
+        margin-top: 15px;
+    }
+  
+    .social-sidebar {
+        left: 8px;
+        padding: 6px;
+        gap: 10px;
+    }
+
+    .social-sidebar img {
+        width: 25px;
+        height: 25px;
+    }
+
+    footer {
+        font-size: 11px;
+        margin-top: 50px;
+        width: 100%;   /* FIX overflow */
+    }
+}
   </style>
 </head>
 
@@ -184,6 +245,7 @@
 </body>
 
 </html>
+
 
 
 
