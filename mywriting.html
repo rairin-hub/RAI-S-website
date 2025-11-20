@@ -133,6 +133,50 @@ footer {
   font-size: 14px;
 }
 
+/*  -------------------------------
+RESPONSIVE LAYOUT FOR SMALL DEVICES 
+------------------------------------ */
+
+@media (max-width: 600px) {
+
+  header {
+    font-size: 26px;
+    padding: 5px 0;
+  }
+
+  nav {
+    padding: 5px 0;
+  }
+
+  nav a {
+    display: block;        
+    padding: 10px 0;
+    font-size: 16px;
+  }
+
+  .collage-grid {
+    grid-template-columns: 1fr;  
+    gap: 12px;
+    padding: 8px;
+  }
+
+  .collage-grid img {
+    border-radius: 15px;
+    aspect-ratio: 1 / 1.05; 
+  }
+
+  .center-text {
+    font-size: 28px;
+    padding: 15px;
+    border-radius: 15px;
+    letter-spacing: 1px;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 25px;
+  }
+}
 </style>
 </head>
 
@@ -172,5 +216,6 @@ footer {
 
 </body>
 </html>
+
 
 
